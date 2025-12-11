@@ -1,4 +1,4 @@
-import rotations from "./task-1-rotations-data";
+import { rotations_one, rotations_two } from "./data/task-1-rotations-data";
 
 function secretEntrance(rotations: string[]): number {
 	let zero_counter: number = 0;
@@ -7,9 +7,6 @@ function secretEntrance(rotations: string[]): number {
 	for (const rotation of rotations) {
 		const direction: string = rotation.trim().charAt(0);
 		const amount: number = Number(rotation.trim().slice(1));
-
-		const range_start: number = 0;
-		const range_end: number = 99;
 
 		if (direction.toUpperCase() === "R") {
 			dial_num += amount;
@@ -27,4 +24,5 @@ function secretEntrance(rotations: string[]): number {
 	return zero_counter;
 }
 
-console.log(secretEntrance(rotations));
+console.log(secretEntrance(rotations_one), " < rotations one zero counter");
+console.log(secretEntrance(rotations_two), " < rotations two zero counter");

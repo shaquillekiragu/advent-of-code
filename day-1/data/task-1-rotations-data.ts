@@ -1,4 +1,4 @@
-const rotations: string[] = [
+export const rotations_one: string[] = [
 	"R10",
 	"L39",
 	"L30",
@@ -4100,4 +4100,41 @@ const rotations: string[] = [
 	"R14",
 ];
 
-export default rotations;
+export const rotations_two: string[] = [
+	"R10",
+	"L39",
+	"L30",
+	"L9",
+	"R28",
+	"L27",
+	"R14",
+	"L48",
+	"R8",
+	"R9",
+	"R29",
+	"L13",
+	"L15",
+	"R24",
+	"R11",
+	"L24",
+	"L34",
+	"R9",
+	"R2",
+	"L44",
+	"R18",
+	"L39",
+	"L30",
+	"R31",
+	"L13",
+	"R23",
+	"R7",
+	"R14",
+	"R15",
+	"R25",
+	"R44",
+	"R23",
+	"R18",
+	"L16",
+	"R21",
+	"L16",
+];
