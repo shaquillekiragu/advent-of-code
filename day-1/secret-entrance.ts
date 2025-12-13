@@ -1,4 +1,4 @@
-import { rotations_one, rotations_two } from "./data/task-1-rotations-data";
+import { rotations_one, rotations_two } from "./data/rotations-data";
 
 function secretEntrance(rotations: string[]): number {
 	let zero_counter: number = 0;
