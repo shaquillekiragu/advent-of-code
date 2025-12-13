@@ -4,7 +4,7 @@
 		"module": "commonjs",
 		"lib": ["ES2020"],
 		"outDir": "./dist",
-		"rootDir": "./",
+		"rootDir": "./tasks",
 		"strict": true,
 		"esModuleInterop": true,
 		"skipLibCheck": true,
@@ -15,6 +15,6 @@
 		"declarationMap": true,
 		"sourceMap": true
 	},
-	"include": ["**/*.ts"],
+	"include": ["./tasks/*.ts"],
 	"exclude": ["node_modules", "dist"]
 }
