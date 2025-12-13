@@ -3,6 +3,6 @@ advent-of-code
 ## Running TypeScript
 
 ```sh
-tsc  # build JS files
-node dist/ # run JS files
+npm run build  # tsc - build JS files
+npm start dist/tasks/ # run JS files
 ```
