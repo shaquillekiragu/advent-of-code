@@ -4,6 +4,7 @@
 	"main": "index.js",
 	"scripts": {
 		"build": "tsc",
+		"start": "node dist/tasks/*.js",
 		"format": "prettier --write \"**/*.{ts,js,json}\"",
 		"format:check": "prettier --check \"**/*.{ts,js,json}\"",
 		"test": "echo \"Error: no test specified\" && exit 1"
