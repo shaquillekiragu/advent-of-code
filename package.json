@@ -3,8 +3,7 @@
 	"version": "1.0.0",
 	"main": "index.js",
 	"scripts": {
-		"build": "tsc && rm -rf dist/data",
-		"start": "node scripts/start.js",
+		"build": "tsc",
 		"format": "prettier --write \"**/*.{ts,js,json}\"",
 		"format:check": "prettier --check \"**/*.{ts,js,json}\"",
 		"test": "echo \"Error: no test specified\" && exit 1"
