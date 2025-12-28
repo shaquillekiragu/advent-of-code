@@ -16,6 +16,10 @@ function dayThreeTaskOne(battery_banks: string[]): number {
 				max_joltage_digits.push(joltage_str);
 			}
 		}
+
+		const max_joltage = Number(max_joltage_digits.join(""));
+
+		joltage_total += max_joltage;
 	}
 
 	return joltage_total;
