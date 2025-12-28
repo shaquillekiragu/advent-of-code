@@ -1,6 +1,6 @@
-import { rotations_one, rotations_two } from "../data/rotations";
+import { rotations_one, rotations_two } from "../data/day-1-rotations";
 
-function taskOne(rotations: string[]): number {
+function dayOneTaskOne(rotations: string[]): number {
 	let zero_counter: number = 0;
 	let dial_num: number = 50;
 
@@ -24,10 +24,10 @@ function taskOne(rotations: string[]): number {
 	return zero_counter;
 }
 
-// console.log(taskOne(rotations_one), " < rotations one zero counter");
-// console.log(taskOne(rotations_two), " < rotations two zero counter");
+// console.log(dayOneTaskOne(rotations_one), " < rotations one zero counter");
+// console.log(dayOneTaskOne(rotations_two), " < rotations two zero counter");
 
-function taskTwo(rotations: string[]): number {
+function dayOneTaskTwo(rotations: string[]): number {
 	let passing_zero_counter: number = 0;
 	let dial_num: number = 50;
 
@@ -59,5 +59,5 @@ function taskTwo(rotations: string[]): number {
 	return passing_zero_counter;
 }
 
-// console.log(taskTwo(rotations_one), " < rotations one zero counter");
-// console.log(taskTwo(rotations_two), " < rotations two zero counter");
+// console.log(dayOneTaskTwo(rotations_one), " < rotations one zero counter");
+// console.log(dayOneTaskTwo(rotations_two), " < rotations two zero counter");

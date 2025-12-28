@@ -15,6 +15,6 @@
 		"declarationMap": false,
 		"sourceMap": false
 	},
-	"include": ["./tasks/**/*.ts"],
-	"exclude": ["node_modules", "dist", "data/**/*"]
+	"include": ["./tasks/**/*.ts", "./data/**/*.ts"],
+	"exclude": ["node_modules", "dist"]
 }
