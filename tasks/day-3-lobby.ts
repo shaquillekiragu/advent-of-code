@@ -9,15 +9,22 @@ function dayThreeTaskOne(battery_banks: string[]): number {
 		const joltage_array = battery_bank.split("");
 		const max_joltage_digits: string[] = [];
 
-		for (const joltage_str of joltage_array) {
-			const joltage_num = Number(joltage_str);
+		const nine_twice_regex = /9{2}/;
 
-			if (max_joltage_digits.length <= 1 && joltage_num === 9) {
-				max_joltage_digits.push(joltage_str);
+		if (nine_twice_regex.test(battery_bank)) {
+			max_joltage_digits.push("9", "9");
+		} else {
+			for (const joltage_str of joltage_array) {
+				const joltage_num = Number(joltage_str);
+
+				// if (max_joltage_digits.length <= 1 && joltage_num === 9) {
+				// 	max_joltage_digits.push(joltage_str);
+				// }
 			}
 		}
 
 		const max_joltage = Number(max_joltage_digits.join(""));
+		console.log(max_joltage, " < max joltage");
 
 		joltage_total += max_joltage;
 	}
